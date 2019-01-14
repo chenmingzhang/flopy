@@ -64,7 +64,7 @@ fig = plt.figure(figsize=(5, 5))
 ax = fig.add_subplot(1, 1, 1)
 
 # Next we create an instance of the ModelMap class
-modelxsect = flopy.plot.ModelCrossSection(ml=ml, line={'Row': 20})
+modelxsect = flopy.plot.ModelCrossSection(model=ml, line={'Row': 20})
 
 # Then we can use the plot_grid() method to draw the grid
 # The return value for this function is a matplotlib LineCollection object,
@@ -88,7 +88,7 @@ fig = plt.figure(figsize=(5, 5))
 ax = fig.add_subplot(1, 1, 1)
 
 # Next we create an instance of the ModelMap class
-modelxsect = flopy.plot.ModelCrossSection(ml=ml, line={'Column': 10})
+modelxsect = flopy.plot.ModelCrossSection(model=ml, line={'Column': 10})
 
 # Then we can use the plot_grid() method to draw the grid
 # The return value for this function is a matplotlib LineCollection object,
